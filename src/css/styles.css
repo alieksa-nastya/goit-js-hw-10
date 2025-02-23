@@ -1,18 +1,199 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.input-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+}
+
+#datetime-picker {
+    width: 272px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    outline: transparent;
+}
+
+#datetime-picker:hover {
+    border: 1px solid #000;
+}
+
+#datetime-picker:active {
+    border: 1px solid #4e75ff;
+}
+
+#datetime-picker:disabled {
+    background: #fafafa;
+    border: 1px solid #808080;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #4e75ff;
+    cursor: pointer;
+    min-width: 75px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.btn:disabled {
+    background: #cfcfcf;
+    color: #989898;
+}
+
+.btn:hover {
+    background: #6c8cff;
+    color: #fff;
+}
+
+.timer {
+display: flex;
+justify-content: space-between;
+gap: 24px;
+width: 346px;
+height: 72px;
+}
+
+.field {
+display: flex;
+flex-direction: column;
+width: 55px;
+}
+
+.value {
+font-family: "Montserrat", sans-serif;
+height: 48px;
+font-weight: 300;
+font-size: 40px;
+line-height: 1.2;
+letter-spacing: 0.04em;
+color: #2e2f42;
+
+}
+
+.label {
+width: 44px;
+height: 24px;
+font-family: "Montserrat", sans-serif;
+font-weight: 200;
+font-size: 16px;
+line-height: 1.5;
+color: #2e2f42;
+}
+
+/* form */
+
+.form {
+    margin-top: 10px;
+    width: 360px;
+}
+
+.form > label, 
+.form label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    display: block;
+}
+
+
+.delay-input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    outline: transparent;
+    padding-left: 10px;
+}
+
+.delay-input:hover {
+    border: 1px solid #000;
+}
+
+.delay-input:focus {
+    border: 1px solid #4e75ff;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+.fieldset {
+    width: 100%;
+    display: flex;
+    gap: 48px;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.fieldset > legend {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.fieldset > label {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #2e2f42;
+}
+
+.fieldset-input {
+    width: 20px;
+    height: 20px;
+margin-bottom: 8px;
+border: 1px solid #757575;
+border-radius: 14px;
+
+}
+
+.form > button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #4e75ff;
+    cursor: pointer;
+    width: 360px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: block;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form > button:hover {
+    background: #6c8cff;
+}

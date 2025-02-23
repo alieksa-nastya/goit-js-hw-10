@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "goit-js-hw-10",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/goit-js-hw-10/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -17,7 +17,19 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "flatpickr": "^4.6.13",
+    "izitoast": "^1.4.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
-  }
+  },
+  "description": "Цей проект було створено за допомогою Vite. Для знайомства та налаштування додаткових можливостей [звернись до документації](https://vitejs.dev/).",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alieksa-nastya/goit-js-hw-10.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alieksa-nastya/goit-js-hw-10/issues"
+  },
+  "homepage": "https://github.com/alieksa-nastya/goit-js-hw-10#readme"
 }
